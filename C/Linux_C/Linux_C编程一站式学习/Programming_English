@@ -1,0 +1,99 @@
+Ch02
+Constant : 常量
+Variable : 变量
+Declaration : 声明
+Definition : 定义
+Identifier : 标识符
+Assignment : 赋值
+Initialization : 初始化
+Operator : 运算符
+Operand : 操作数
+Expression : 表达式
+Precedence : 优先级
+Associativity : 结合性(运算符)
+Composition : 组合
+Integer Type : 整数类型(char, int)
+
+Ch03
+Argument : 参数
+Function : 函数
+Function Call : 函数调用
+Function Type : 函数类型
+Return Value ： 返回值
+Side Effect : 副作用(Function)
+Prototype : 原型
+Implicit Declaration : 隐式声明
+Parameter : 形参
+Argument : 实参
+Call By Value
+Variable Argument : 可变参数
+Local Variable : 局部变量
+Global Variable : 全局变量
+Constant Expression : 常量表达式
+
+Ch04
+Selection Statement : 分支语句
+Controlling Expression : 控制表达式
+Control Flow : 控制流程
+Branch : 分支
+Equality Operator : 等性运算符(==, !=)
+Relational Operator : 关系运算符(>, >=, <, <=)
+(相等性运算符的优先级低于关系运算符)
+Statement Block : 语句块 ({......})
+Null Statement : 空语句 (just ';')
+Encapsulate : 封装
+Unary Operator : 单目运算 (eg: '!' 逻辑非)
+Binary Operator : 双目运算
+
+运算符的优先级顺序是：!高于* / %，高于+ -，高于> < >= <=，高于== !=，高于&&，高于||，高于=
+正负号是单目运算符，而加减号是双目运算符，正负号的优先级和逻辑非运算符相同，比加减的优先级要高
+
+Ch05
+Recursive : 递归
+Base Case : 基础条件
+Stack : 栈，堆栈
+Stack Frame : 栈帧
+
+Ch06 
+Loop : 循环
+Accumulator : 累加器
+Loop Variable : 循环变量
+Functional Programming : 函数式编程(eg: 递归)
+Imperative Programming : 命令式编程(eg: 循环)
+Infinite Loop : 无限循环(死循环)
+
+for (控制表达式1; 控制表达式2; 控制表达式3) 
+如果不考虑循环体中包含continue语句的情况，
+这个for循环等价于下面的while循环：
+
+控制表达式1;
+while (控制表达式2) {
+	语句 
+	控制表达式3;
+}
+
+从这种等价形式来看，控制表达式1和3都可以为空，
+但控制表达式2是必不可少的，
+例如for (;1;){...}等价于while (1) {...}死循环。
+C语言规定，如果控制表达式2为空，则认为控制表达式2的值为真，
+因此死循环也可以写成
+for (;;) {...}
+
+Prefix Increment Operator : 前缀自增运算符(++i; i = i + 1; return i + 1)
+Prefix Decrement Operator : 前缀自减运算符(--i; i = i - 1; return i - 1)
+Postfix Increment Operator : 后缀自增运算符(i++; i = i + 1; return i)
+Postfix Decrement Operator : 后缀自减运算符(i--; i = i - 1; return i)
+
+Ch07
+Primitive Type : 基本类型(int, float)
+Compound Type : 复合类型(String)
+
+Arithmetic Type : 算术类型(int, float)
+Scalar Type : 标量类型
+
+Ch08
+Traversal : 遍历
+Preprocessing Directive : 预处理指示
+Macro : 宏
+Hard coding : 硬编码
+

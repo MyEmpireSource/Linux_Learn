@@ -1,0 +1,13 @@
+# good gcc command
+# '-Wall' show all waring info!
+gcc -Wall [xx.c] -o [file_pateh/executable_file_name]
+
+# 'main.h' is in libm.so
+# the param '-lm' let executer to find libs.so
+gcc - Wall [xx.c] -lm -o [file_pateh/executable_file_name]
+
+# show preprocess;
+# 可以看到预处理之后、编译之前的程序
+gcc -E [xx.c]
+cpp [xx.c]
+
